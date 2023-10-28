@@ -1,0 +1,66 @@
+Rule Name,Description
+Symbolic_Link_Files_Macros_File_Characteristic,"This signature detects Symbolic Link (SLK) files that contain Excel 4.0 macros. While not inherently malicious, these SLK files can be used used by attackers to evade detection and deliver malicious payloads."
+Microsoft_XLSX_with_Macrosheet,Basic hunt rule for XLS* with macrosheets.
+MC_Office_DDE_Command_Execution,This rule looks for a variety of DDE command execution techniques.
+Embedded_PE,"Discover embedded PE files, without relying on easily stripped/modified header strings."
+IQY_File_With_Pivot_Extension_URL,Detect Excel IQY files with URLs that contain commonly used malicious file extensions that may act as a pivot to a secondary stage.
+SC_Microsoft_Excel_Data_Connection,https://inquest.net/blog/2020/03/18/Getting-Sneakier-Hidden-Sheets-Data-Connections-and-XLM-Macros
+Executable_Converted_to_MSI,http://blog.inquest.net/blog/2019/01/29/Carving-Sneaky-XLM-Files/
+IQY_File,Detects all Excel IQY files by identifying the WEB 'magic' on the first line and also includes any URL.
+CVE_2018_4878_0day_ITW,This signature is mostly public sourced and detects an in-the-wild exploit for CVE-2018-4878.
+Base64_Encoded_Powershell_Directives,This signature detects base64 encoded Powershell directives.
+MSIExec_Pivot,http://blog.inquest.net/blog/2019/01/29/Carving-Sneaky-XLM-Files/
+IQY_File_With_Suspicious_URL,"Detects suspicious IQY Files using URLs associated with suspicious activity such as direct IP address URLs, URL shorteners, and file upload/download providers."
+Microsoft_Office_Document_with_Embedded_Flash_File,Detect Microsoft Office documents with embedded Adobe Flash files.
+Excel_Hidden_Macro_Sheet,http://blog.inquest.net/blog/2019/01/29/Carving-Sneaky-XLM-Files/
+PE_File,"Discover embedded PE files, without relying on easily stripped/modified header strings inside OLE"
+RTFFILE,Detects RTF files that can be embedded in OLE file
+CVE_2017_8759_Mal_Doc,Detects malicious files related to CVE-2017-8759 - file Doc1.doc
+CVE_2017_8759_SOAP_Excel,Detects malicious files related to CVE-2017-8759
+webshell_in_image,"Webshell in GIF, PNG or JPG"
+gen_excel_xor_obfuscation_velvetsweatshop,Detects XOR encryption (c. 2003) in Excel file formats
+SUSP_PiratedOffice_2007,Detects an Office document that was created with a pirated version of MS Office 2007
+Contains_DDE_Protocol,Detect Dynamic Data Exchange protocol in doc/docx
+Maldoc_Suspicious_OLE_target,Detects maldoc With Tartgeting Suspicuios OLE
+Maldoc_CVE_2017_11882,Detects maldoc With exploit for CVE_2017_11882
+ppaction,Malicious PowerPoint Documents Abusing Mouse Over Actions
+mwi_document,"MWI generated object malware kit found in document related to CVE-2010-3333, CVE-2012-0158,CVE-2013-3906, CVE-2014-1761"
+office_document_vba,Office document with embedded VBA
+Office_AutoOpen_Macro,Detects an Microsoft Office file that contains the AutoOpen Macro function
+Contains_VBE_File,Detect a VBE file inside a byte sequence
+Contains_hidden_PE_File_inside_a_sequence_of_numbers,Detect a hidden PE file inside a sequence of numbers (comma separated)
+Contains_VBA_macro_code,Detect a MS Office document with embedded VBA macro code
+Contains_UserForm_Object,Detect UserForm object in MS Office document
+APT_OLE_JSRat,Targeted attack using Excel/word documents
+ClamAV Emotet String Aggregate ,Detect indicators for emotet malware
+Contains UserForm Object ,Detect User Form Object in OLE
+MuddyWater_Mal_Doc_Feb18_1,Detect base64 string content hidding in OLE
+OleStream,detect Ole stream in file
+MuddyWater_Mal_Doc_Feb18_2,Detect OLE CLSID indicator
+macrocheck,Identify office document with MACROCHECK credential stealer  in them
+PowerShell Case Anomaly,Detects obfuscated PowerShell hacktools
+SC Microsoft Excel Data Connection,Detect hidden data sheets connections to XLM macro
+SUSP_Obfuscted_PowerShell_Code,Detect obsfucated PowerShell
+SUSP_PowerShell_Caret_Obfuscation_2,Detect obsfucated PowerShell
+eicar_substring_test,Detected EICAR substring in file
+exploit cve_2012_856,Detect office exploit in OLE
+hancitor_dropper,Detect Hancitor Dropper in OLE
+maldoc find kernel32 base method 1,detect Kernel32.dll in OLE
+MAL_DOC_ZLoader_Oct20_1,Detect zloader attack in OLE
+HoneyBee_Dropper_MalDoc,Detect HoneyBee dropper in OLE
+APT_MAL_MalDoc_CloudAtlas_Oct20_1,Detect cloudAtlas dropper
+SUSP_MalDoc_ExcelMacro,Suspected excell macro artifacts
+maldoc_find_kernel32_base_method_3,detect Kernel32.dll in OLE
+maldoc_find_kernel32_base_method_1,detect Kernel32.dll in OLE
+Contains_hidden_PE_File_inside_a_sequence_of_numbers,detect obsfucated PE
+maldoc getEIP method 1,Detect Extended Instruction Pointer in OLE (used to track the address of the current instruction running inside the application)
+maldoc getEIP method 2,Detect Extended Instruction Pointer in OLE (used to track the address of the current instruction running inside the application)
+maldoc getEIP method 3,Detect Extended Instruction Pointer in OLE (used to track the address of the current instruction running inside the application)
+maldoc getEIP method 4,Detect Extended Instruction Pointer in OLE (used to track the address of the current instruction running inside the application)
+maldoc indirect function call 1,Detect indirect function call in OLE
+maldoc indirect function call 2,Detect indirect function call in OLE
+maldoc indirect function call 2,Detect indirect function call in OLE
+PowerShell,Detect powershell indication
+PowerShell 2,Detect hidden powershell
+Swfdoc hunter,Detect Adobe SWF in a OLE
+Webshell JSP generic,Detect generic Java Server Page (JSP)  webshell which contains cmd or /bin/bash encoded in ascii ord
